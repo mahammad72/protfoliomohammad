@@ -1,11 +1,12 @@
 import React from "react";
 import HeroImage from "../assests/MSToon_anim.jpg";
 import { BsChevronRight } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div
-      name="Home"
+      name="home"
       className="h-screen w-full bg-gradient-to-b 
         from-black via-black to-gray-800 justify-center items-center"
     >
@@ -31,7 +32,8 @@ const Home = () => {
             technologies, including Redux, Node.js, and GraphQL.
           </p>
           <div>
-            <button
+            <Link
+              to="portfolio" smooth duration={500}
               className="text-white w-fit px-6 py-3 my-2 
                         flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500"
             >
@@ -39,7 +41,7 @@ const Home = () => {
               <span className="mx-1 hover:rotate-90 duration-300 ">
                 <BsChevronRight size={15} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div>

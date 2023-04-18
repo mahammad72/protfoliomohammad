@@ -5,7 +5,8 @@ import Home from "./Components/Home";
 import SocialLinks from "./Components/SocialLinks";
 import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
-import Expriance from "./Components/Expriance";
+import Experience from "./Components/Experience";
+import Contact from "./Components/Contact";
 
 const App = () => (
   <div>
@@ -13,7 +14,8 @@ const App = () => (
     <Home />
     <About />
     <Portfolio />
-    <Expriance />
+    <Experience />
+    <Contact />
 
     <SocialLinks />
   </div>

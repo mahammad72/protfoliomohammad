@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
     return (
-        <div className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white">
+        <div name="about" className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white">
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">About</p>
@@ -26,7 +26,7 @@ const About = () => {
                     deliver high-quality work that exceeds client expectations.
                 </p>
 
-                <br />
+                {/* <br />
 
                 <p className="text-xl mt-5">
                     In addition to their technical expertise, Mohammad momin is also known
@@ -43,7 +43,7 @@ const About = () => {
                     technical expertise with creativity, innovation, and a passion for
                     delivering top-quality work. Their commitment to excellence and
                     dedication to their craft make them an asset to any development team.
-                </p>
+                </p> */}
             </div>
         </div>
     );
