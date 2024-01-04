@@ -25,7 +25,7 @@ const SocialLinks = () => {
                     Github <BsGithub size={35} />
                 </>
             ),
-            href: "https://github.com/mohamad-gadgetapp/",
+            href: "https://github.com/mahammad72",
         },
         {
             id: 3,
