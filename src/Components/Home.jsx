@@ -25,7 +25,7 @@ const Home = () => {
 
           <p className="text-gray-500 py-4 max-w-md">
             Meet Mohammad Momin, a highly skilled and experienced React Native
-            and React JS developer with over 5 years of expertise in creating
+            and React JS developer with over 6.5 years of expertise in creating
             exceptional user interfaces and responsive web applications.
             Throughout Mohammad Momin's career, they have demonstrated a strong
             ability to design and develop complex projects using cutting-edge
