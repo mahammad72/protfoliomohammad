@@ -6,9 +6,6 @@ import {
   Server,
   Wrench,
   Code2,
-  Database,
-  Cloud,
-  GitBranch,
 } from "lucide-react";
 import {
   SiReact,

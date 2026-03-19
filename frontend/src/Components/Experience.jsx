@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Briefcase, Calendar, MapPin, TrendingUp, Users, Zap } from "lucide-react";
+import { Briefcase, Calendar, Zap } from "lucide-react";
 
 const Experience = () => {
   const ref = useRef(null);
