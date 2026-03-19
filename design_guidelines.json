@@ -1,0 +1,143 @@
+{
+  "project_identity": {
+    "name": "Mohammad Hasan Suthar Portfolio",
+    "persona": "E1: The Anti-AI Designer",
+    "aesthetic": "Premium Stripe/Apple-inspired, Dark Mode, Futuristic, Glassmorphism",
+    "core_philosophy": "Fusion over Imitation. Emotion First. Density where it matters, breathing room where it counts."
+  },
+  "typography": {
+    "font_family": {
+      "headings": "\"Plus Jakarta Sans\", sans-serif",
+      "body": "\"Inter\", sans-serif",
+      "code": "\"JetBrains Mono\", monospace",
+      "accent": "\"Outfit\", sans-serif"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
+    "rules": [
+      "NEVER use Inter for Headings (h1, h2, h3). Use Plus Jakarta Sans.",
+      "Use JetBrains Mono for skill badges, code snippets, and technical metrics.",
+      "Headings must use tight tracking (tracking-tight or tracking-tighter).",
+      "Body text should have relaxed line-height (leading-relaxed)."
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#050505",
+      "surface": "#0A0A0A",
+      "surface_highlight": "#171717",
+      "border": "#262626",
+      "primary": "#6366F1",
+      "secondary": "#A855F7",
+      "accent_gradient_start": "#7C3AED",
+      "accent_gradient_end": "#3B82F6",
+      "text_primary": "#EDEDED",
+      "text_secondary": "#A1A1AA",
+      "text_muted": "#52525B",
+      "success": "#10B981",
+      "warning": "#F59E0B"
+    },
+    "gradients": {
+      "hero_text": "bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400",
+      "glass_surface": "bg-white/5 backdrop-blur-xl border border-white/10",
+      "primary_button": "bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500"
+    }
+  },
+  "layout_strategies": {
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_spacing": "py-24 or py-32",
+      "element_gap": "gap-6 or gap-8"
+    },
+    "grid_system": {
+      "projects": "Bento Grid: grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6. Mix spans (col-span-2) for variety.",
+      "skills": "Flex wrap with gap-3 for badges, or grid for categorized lists."
+    },
+    "z_index": {
+      "navbar": "z-50",
+      "modal": "z-50",
+      "dropdown": "z-40",
+      "background_elements": "z-0"
+    }
+  },
+  "components": {
+    "Hero": {
+      "type": "Immersive",
+      "elements": [
+        "Animated Gradient Text (Name & Role)",
+        "Glassmorphism Cards floating in background",
+        "CTA Buttons with 'tracing beam' or glow effect"
+      ],
+      "background_image": "https://images.unsplash.com/photo-1735192395659-3e0b4164b0ec"
+    },
+    "About": {
+      "layout": "Asymmetric 2-column",
+      "image": "https://images.unsplash.com/photo-1751200065697-4461cc2b43cb",
+      "image_style": "Rounded-2xl with subtle purple glow shadow"
+    },
+    "Projects": {
+      "style": "Bento Grid Cards",
+      "hover_effect": "Scale up (1.02) + Border Glow + Image Zoom",
+      "content": "Project Title, Tech Stack (Badges), Short Description, Links (GitHub/Live)",
+      "placeholders": [
+        "https://images.unsplash.com/photo-1641567535859-c58187ac4954",
+        "https://images.unsplash.com/photo-1766171359875-73155eff7f66"
+      ]
+    },
+    "Skills": {
+      "style": "Categorized Sections (Frontend, Backend, Mobile, Tools)",
+      "visual": "Glass cards with icon + name. Use 'lucide-react' icons.",
+      "background_texture": "https://images.unsplash.com/photo-1732008278594-3f3272927445"
+    },
+    "Timeline": {
+      "style": "Vertical line with glowing nodes",
+      "cards": "Alternate left/right on desktop, single column on mobile."
+    },
+    "Contact": {
+      "style": "Clean Form + Social Links",
+      "input_style": "bg-white/5 border-white/10 focus:border-purple-500 rounded-lg p-4"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-filter backdrop-blur-lg bg-opacity-10 border border-white/10",
+    "shadows": "shadow-[0_0_20px_rgba(124,58,237,0.15)]",
+    "animation": {
+      "library": "framer-motion",
+      "types": [
+        "Fade In Up (y: 20 -> 0)",
+        "Stagger Children",
+        "Hover Lift",
+        "Text Gradient Flow"
+      ]
+    }
+  },
+  "assets": {
+    "icons": "lucide-react (Use for UI elements), react-icons (For brand logos like React, Node, etc.)",
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1735192395659-3e0b4164b0ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGRhcmslMjBwdXJwbGUlMjBibHVlJTIwZ3JhZGllbnQlMjBnbGFzcyUyMGdlb21ldHJ5fGVufDB8fHx8MTc3MzkyMTQ5OHww&ixlib=rb-4.1.0&q=85",
+      "workspace": "https://images.unsplash.com/photo-1751200065697-4461cc2b43cb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwZGV2ZWxvcGVyJTIwZGVzayUyMHNldHVwJTIwZGFyayUyMG1vZGV8ZW58MHx8fHwxNzczOTIxNDk5fDA&ixlib=rb-4.1.0&q=85",
+      "abstract_shape": "https://images.unsplash.com/photo-1732008278594-3f3272927445?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwxfHwzZCUyMGFic3RyYWN0JTIwZ2xhc3MlMjBzaGFwZXMlMjBwdXJwbGUlMjBibHVlfGVufDB8fHx8MTc3MzkyMTUwMXww&ixlib=rb-4.1.0&q=85",
+      "project_1": "https://images.unsplash.com/photo-1641567535859-c58187ac4954?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBpbnRlcmZhY2UlMjBhYnN0cmFjdCUyMGRhcmslMjBVSXxlbnwwfHx8fDE3NzM5MjE1MDB8MA&ixlib=rb-4.1.0&q=85",
+      "project_2": "https://images.unsplash.com/photo-1766171359875-73155eff7f66?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBpbnRlcmZhY2UlMjBhYnN0cmFjdCUyMGRhcmslMjBVSXxlbnwwfHx8fDE3NzM5MjE1MDB8MA&ixlib=rb-4.1.0&q=85",
+      "existing_assets_path": "/app/src/assests/"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. DEPENDENCIES: Install 'framer-motion', 'lucide-react', 'react-icons', 'clsx', 'tailwind-merge'.",
+    "2. CONFIG: Create/Update 'tailwind.config.js' to include the fonts and colors defined in this JSON. Ensure 'content' covers all src files.",
+    "3. CLEANUP: Delete 'App.css' contents. Move styles to Tailwind classes.",
+    "4. COMPONENTS: Refactor existing components in '/app/src/Components/' to use the new design system. Do not delete them, but rewrite their return JSX and logic.",
+    "5. DARK MODE: Implement a toggle using a React Context or simple state that adds a 'dark' class to the HTML tag. Default to DARK.",
+    "6. PRESERVE: Keep existing text content (Bio, Experience details) but wrap them in the new UI.",
+    "7. IMAGES: Use the Unsplash URLs provided for backgrounds/placeholders. Use existing assets from '/app/src/assests/' for specific project logos/screenshots if they exist.",
+    "8. ANIMATION: Use framer-motion for smooth entrance animations (AnimatePresence not required for simple scroll reveals).",
+    "9. FILE TYPE: Use .js and .jsx extensions only. Do not convert to TSX."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "All interactive elements MUST include data-testid attributes."
+  ]
+}
