@@ -25,32 +25,6 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus({ loading: true, success: false, error: "" });
-
-    try {
-      const apiUrl = process.env.REACT_APP_BACKEND_URL || "";
-      const response = await fetch(`${apiUrl}/api/contact`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setStatus({ loading: false, success: true, error: "" });
-        setFormData({ name: "", email: "", message: "" });
-        setTimeout(() => setStatus({ loading: false, success: false, error: "" }), 5000);
-      } else {
-        setStatus({ loading: false, success: false, error: data.detail || "Failed to send message" });
-      }
-    } catch (error) {
-      setStatus({ loading: false, success: false, error: "Network error. Please try again." });
-    }
-  };
-
   const copyEmail = () => {
     navigator.clipboard.writeText("mahammadmomin7@gmail.com");
     setCopied(true);
@@ -81,7 +55,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/mahammad72", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/mahammad-momin-339b4b146", label: "LinkedIn" },
-    { icon: SiMedium, href: "https://medium.com/gmahammadmomin7", label: "Medium" },
+    { icon: SiMedium, href: "https://medium.com/@mahammadmomin7", label: "Medium" },
   ];
 
   const containerVariants = {
@@ -223,7 +197,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <motion.div variants={cardVariants}>
-            <form onSubmit={handleSubmit} className="glass-card p-8 rounded-3xl" data-testid="contact-form">
+            <form  action="https://getform.io/f/e026474a-7723-494e-aa5e-9b1e2c1902f4" method='POST'  className="glass-card p-8 rounded-3xl" data-testid="contact-form">
               <div className="space-y-6">
                 {/* Name Input */}
                 <div>
