@@ -10,6 +10,7 @@ import Achievements from "./Components/Achievements";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
+ 
 
 const App = () => {
   const [loading, setLoading] = useState(true);

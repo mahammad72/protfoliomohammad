@@ -22,8 +22,8 @@ const Projects = () => {
       title: "Me Time",
       description:
         "Talent-sharing video platform (#VocalForLocal) with video recording, editing, feed, and notifications.",
-      result: "75% increase in weekly uploads",
-      tech: ["React Native", "Firebase"],
+      result: "75% increase in  weekly uploads",
+      tech: ["React Native", "Firebase",""],
       link: "https://play.google.com/store/apps/details?id=com.metime.application",
       linkType: "android",
       image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=500&fit=crop",

@@ -18,7 +18,7 @@ const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState({ loading: false, success: false, error: "" });
+  const [status] = useState({ loading: false, success: false, error: "" });
   const [copied, setCopied] = useState(false);
 
   const handleChange = (e) => {
